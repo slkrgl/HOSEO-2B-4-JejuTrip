@@ -14,7 +14,7 @@
 	int check=logon.Login(id,passwd);
 	if(check ==1){
 	session.setAttribute("id",id);
-	response.sendRedirect("sessionMain.jsp");
+	response.sendRedirect("main.jsp");
 	}else if(check == 0){%>
 	<script>
 	alert("비밀번호가 맞지 않습니다.");
